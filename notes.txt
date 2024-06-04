@@ -1,0 +1,23 @@
+login: admin
+password: 12345678
+email: admin@gmail.com
+
+
+
+
+       vonc karox enq terminalov stexcel model
+CLASS.objects.all() _> DB ic stanum enq et tabli informacian
+dep = SOME(title="IT") it poxancumenq SOME klassi konstruktori mej
+dep.save()- db um pahpanum enq popoxutyuny
+SOME.objects.get(pk=1)stanum enq 1 id unecox tvyaly
+SOME.objects.filter(ID=1)
+
+
+                     GIT 
+1---- git init   _git in kanchum enq mer projecti mej
+2---- git status _ mer projecti statusy u faylery.
+U - untracked   _gity tesnum bayc chi hetevum
+A - index added       _ gity arden hetevum e popoxutyunnerin
+M - modified    _ gity tesela popoxutyun u pahpanela ir mej
+4---- git add .  _ bolor untrached file, flodernery darcnum enq added
+---- .gitignore file  _file stexcelov menq asum enq te inchin chpetq e hetevi

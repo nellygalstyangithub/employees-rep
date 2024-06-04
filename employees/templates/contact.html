@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{%block title%} 
+   Contact
+{%endblock%}
+
+{%block contact_template%}
+
+<div class="mt-5">
+  <h1>Contact</h1>
+    <div>
+      {% for contact in contact_text %}
+        <p>Address: {{contact.address}}</p>
+        <P>Email: {{contact.email}}</P>
+        <P>Phone: {{contact.phone}}</P>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}
