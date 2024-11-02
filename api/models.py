@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from employees.models import Department, Employee
+from employees.models import Department, Employee, Team
 from tastypie.authorization import Authorization
 from .auth import CustomAuthentication
 
@@ -33,4 +33,12 @@ class EmployeeResource(ModelResource):
         return bundle.data["email"].upper()
 
 
-                                                   
+class TeamResource(ModelResource):
+    class Meta:
+        queryset = Team.objects.all()
+        resource_name = "team"
+        allowed_methods = ["get"]
+        
+
+
+                               
