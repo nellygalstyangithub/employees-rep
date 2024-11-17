@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import  Employee, About, Contact, Team
+from .models import  Employee, About, Contact, Team, Slider
                     
 
 
 def index(request):
-    return render(request,"home.html")
+    slides = Slider.objects.all()
+    return render(request,"home.html", {"slides":slides})
 
 
 def employees(request):

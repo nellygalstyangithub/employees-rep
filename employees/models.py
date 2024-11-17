@@ -26,7 +26,7 @@ class Employee(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name} |{self.s}"
+        return f"{self.first_name} {self.last_name} |{self.department}"
     
     class Meta:
         verbose_name = "employee"
@@ -73,3 +73,17 @@ class Team(models.Model):
     class Meta:
         verbose_name = "team"
         verbose_name_plural = "teams"
+
+
+class Slider(models.Model):
+    img = models.ImageField(upload_to="slider")       
+    title = models.CharField(max_length=255)
+    descr = models.TextField(max_length=400)
+    link = models.URLField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.title}"
+    
+    class Metta:
+        verbose_name = "slider"
+        verbose_name_plural ="sliders"
