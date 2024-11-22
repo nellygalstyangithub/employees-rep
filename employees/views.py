@@ -25,7 +25,7 @@ def employees(request):
     return render(request,"employees.html", {
         "employees":employees,
         "seo":seo
-        })
+    })
 
 
 def about(request):
