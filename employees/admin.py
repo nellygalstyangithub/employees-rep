@@ -6,7 +6,8 @@ from .models import (
     Contact,
     Team,
     Slider,
-    SEO
+    SEO,
+    OG
  )
 
 admin.site.site_header = "Employees Admin "
@@ -47,4 +48,4 @@ admin.site.register(Contact)
 admin.site.register(Team)
 admin.site.register(Slider)
 admin.site.register(SEO)
-
+admin.site.register(OG)
